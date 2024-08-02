@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    form{
+        font-family:cursive;
+        background-image:url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(122).jpg');
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+    .clip-circle{
+        clip-path: circle(50% at 50% 50%);
+    }
+    h1{
+        color: rgb(14, 14, 14);
+        text-align: center;
+    }
+    ::placeholder{
+        color: rgb(14, 14, 14);
+    }
+    input[type="text"],input[type="password"],
+    input[type="radio"],input[type="checkbox"],
+     select,textarea{
+        color: rgb(11, 1, 1);
+        background-color:white;
+        width: 75%;
+        padding:10px;
+        margin: 5px;
+        padding-bottom: 10px;
+        border: 2px solid rgb(14, 14, 14);
+        border-radius: 10px;
+    }
+    input[type="radio"],input[type="checkbox"]{
+        width:fit-content;
+        margin-bottom: 10px;
+    }
+    input[type="button"]{
+        width: 100%;
+        color: rgb(11, 11, 11);
+        background-color:white;
+        cursor: pointer;
+        border:2px solid rgb(10, 10, 10);
+        border-radius: 5px;
+    }
+    h5,label{
+        color: rgb(6, 6, 6);
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color:white;
+    }
+    input[type="button"]:hover{
+        background-color:aqua;
+        width: 100%;
+
+    }
+
+ </style>
+<body>
+    <h1>REGISTRATION FORM</h1> 
+    <image class="clip-circle" src="https://cdn4.sharechat.com/img_718311_33b1eb7b_1674404714687_sc.jpg?tenant=sc&referrer=pwa-sharechat-service&f=687_sc.jpg" height="50px"></image>
+    <form action="/action.php">
+     <input type="text" placeholder="username">
+     <br>
+     <br>
+     <input type="password"placeholder="password">
+     <br>
+     <br>
+      <h5>SELECT YOUR CLASS</h5>
+     <label for="101">
+        <input type="radio" value="classXI" name="class" id="101">classXI
+     </label>
+     <br>
+     <label for="102">
+        <input type="radio" value="classXII" name="class" id="102">classXII
+     </label>
+     <br>
+     <label for="103">
+        <input type="radio" value="btech" name="class" id="102">btech
+     </label>
+     <br>
+
+    <h5>SELECT YOUR SUBJECTS</h5>
+    <label for="maths">
+        <input type="checkbox" value="subject" id="101">maths 
+    </label>
+    <br>
+    <label for="physics">
+        <input type="checkbox" value="subject" id="102">physics 
+    </label>
+    <br>
+    <label for="chemistry">
+        <input type="checkbox" value="subject" id="103">chemistry 
+    </label>
+    <br>
+    <label for="Biology">
+        <input type="checkbox" value="subject" id="104">biology
+    </label>
+    <h5>SELECT YOUR CITY</h5>
+    <select name="city" id="city">
+     <option value="DELHI">Delhi</option>
+     <option value="Banglore">Banglore</option>
+     <option value="Hyderabad">Hyderabad</option>
+     <option value="Tamilnadu">Tamilnadu</option>
+    </select>
+    <br>
+    <br>
+    <textarea name="feedback" id="101" placeholder="something write here" rows="5">FEEDBACK</textarea>
+    <br>
+    <br>
+    <input type="button" value="submit">
+    </form>
+</body>
+</html>
